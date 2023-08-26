@@ -1,28 +1,28 @@
 [
   {
     "id": 0,
-    "name": "翻译",
-    "url": "https://www.deepl.com/zh/translator"
+    "name": "百科",
+    "url": "https://www.baike.com"
   },
   {
     "id": 1,
-    "name": "地图",
-    "url": "https://ditu.amap.com/"
+    "name": "知乎",
+    "url": "https://www.zhihu.com/"
   },
   {
     "id": 2,
-    "name": "图片",
-    "url": "https://www.pexels.com/zh-cn/"
+    "name": "豆瓣",
+    "url": "https://www.douban.com/"
   },
   {
     "id": 3,
-    "name": "云盘",
-    "url": "https://www.aliyundrive.com/drive/"
+    "name": "澎湃",
+    "url": "https://www.thepaper.cn/"
   },
   {
     "id": 4,
-    "name": "Cloudflare",
-    "url": "https://dash.cloudflare.com/"
+    "name": "政务",
+    "url": "http://gjzwfw.www.gov.cn/"
   },
   {
     "id": 5,
@@ -31,12 +31,12 @@
   },
   {
     "id": 6,
-    "name": "GitHub",
-    "url": "https://github.com/"
+    "name": "宝库",
+    "url": "https://fxhub.cn/"
   },
   {
     "id": 7,
-    "name": "哔哩哔哩",
-    "url": "https://www.bilibili.com/"
+    "name": "宝箱",
+    "url": "https://xn--pbt.top/"
   }
 ]

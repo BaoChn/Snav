@@ -141,6 +141,13 @@ onBeforeUnmount(() => {
 </script>
 
 <style lang="scss" scoped>
+@font-face {
+  font-family: 'Orbitron';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://cdn.a-b.cc/Font/Orbitron.woff) format('woff');
+}
 .weather-time {
   position: absolute;
   display: flex;
@@ -153,8 +160,9 @@ onBeforeUnmount(() => {
   transition: transform 0.3s, opacity 0.5s, margin-bottom 0.3s;
   z-index: 1;
   .time {
+    font-family: 'Orbitron', sans-serif;
     cursor: pointer;
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin: 6px 0px;
     text-shadow: var(--main-text-shadow);
     transition: transform 0.3s;

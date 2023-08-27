@@ -33,9 +33,9 @@ export default defineConfig({
         ],
       },
       manifest: {
-        name: "Snavigation",
-        short_name: "Snavigation",
-        description: "一个极致简约的导航页",
+        name: "宝站",
+        short_name: "宝站",
+        description: "私人定制首页",
         display: "standalone",
         start_url: "/",
         theme_color: "#fff",

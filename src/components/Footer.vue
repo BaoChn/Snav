@@ -23,17 +23,25 @@
             <n-button
               strong
               secondary
+              title = "创作者 info"
               @click="jumpTo(copyrightLink ?? 'https://baochn.com/')"
             >
               © {{ siteAnthor }}
             </n-button>
-            <span>&emsp;</span>
             <n-button
               strong
               secondary
               @click="jumpTo('https://bao.ink/')"
             >
-              导航版
+              书签版
+            </n-button>
+            <n-button
+              strong
+              secondary
+              title = "分享你的 idea"
+              @click="jumpTo('https://support.qq.com/products/403153')"
+            >
+              社区栏
             </n-button>
           </n-space>
         </div>

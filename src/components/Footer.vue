@@ -1,17 +1,10 @@
 <template>
   <footer id="footer" @click.stop>
     <div class="copyright">
-      <span class="year">{{ fullYear }}</span>
-      <span
-        class="anthor"
-        @click="jumpTo(copyrightLink ?? 'https://baochn.com/')"
-      >
-        {{ siteAnthor }}
-      </span>
+      <span class="about" title="宝昌工作室⚡" @click="aboutSiteModal = true">{{ fullYear }}</span>
       <span v-if="icp" class="icp" @click="jumpTo('https://beian.miit.gov.cn')">
         {{ icp }}
       </span>
-      <span class="about" @click="aboutSiteModal = true">关于</span>
     </div>
     <!-- 关于 -->
     <n-modal
@@ -30,9 +23,17 @@
             <n-button
               strong
               secondary
-              @click="jumpTo('https://baochn.com/')"
+              @click="jumpTo(copyrightLink ?? 'https://baochn.com/')"
             >
-              Github
+              © {{ siteAnthor }}
+            </n-button>
+            <span>&emsp;</span>
+            <n-button
+              strong
+              secondary
+              @click="jumpTo('https://bao.ink/')"
+            >
+              导航版
             </n-button>
           </n-space>
         </div>
@@ -95,7 +96,7 @@ const jumpTo = (url) => {
     }
     .year {
       &::before {
-        content: "©";
+        content: "@";
         opacity: 1;
         margin-right: 4px;
       }
@@ -108,7 +109,7 @@ const jumpTo = (url) => {
     }
     .about {
       &::before {
-        content: "|";
+        content: "@";
         margin-right: 4px;
       }
     }

@@ -161,7 +161,7 @@ onBeforeUnmount(() => {
   z-index: 1;
   .time {
     cursor: pointer;
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin: 6px 0px;
     line-height: 1.25em;
     font-family: 'Genos', sans-serif;
@@ -255,7 +255,7 @@ onBeforeUnmount(() => {
       flex-direction: column;
       align-items: center;
       span {
-        line-height: normal;
+        line-height: 1em;
       }
       .separator,
       .second {

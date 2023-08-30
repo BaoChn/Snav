@@ -1,8 +1,8 @@
 <template>
   <footer id="footer" @click.stop>
     <div class="copyright">
-      <span class="about" title="宝昌工作室⚡" @click="aboutSiteModal = true">{{ fullYear }}</span>
-      <span v-if="icp" class="icp" @click="jumpTo('https://beian.miit.gov.cn')">
+      <span class="about" title="宝昌⚡出品" @click="aboutSiteModal = true">{{ fullYear }} BaoNAV</span>
+      <span v-if="icp" class="icp" @click="jumpTo('https://beian.miit.gov.cn')" title="已备案🛡️放心用">
         {{ icp }}
       </span>
     </div>
@@ -15,7 +15,10 @@
     >
       <div class="about-modal">
         <div class="about">
-          <span class="name">{{ siteName }}</span>
+          <span class="name"
+          >
+            {{ siteName }}<sup style="font-size:.3em;">mini</sup>
+          </span>
           <span class="version">v {{ packageJson.version }}</span>
         </div>
         <div class="desc">
@@ -26,11 +29,12 @@
               title = "创作者 info"
               @click="jumpTo(copyrightLink ?? 'https://baochn.com/')"
             >
-              © {{ siteAnthor }}
+              @{{ siteAnthor }}
             </n-button>
             <n-button
               strong
               secondary
+              title = "所集皆好物✨"
               @click="jumpTo('https://bao.ink/')"
             >
               书签版
@@ -117,7 +121,7 @@ const jumpTo = (url) => {
     }
     .about {
       &::before {
-        content: "@";
+        content: "©";
         margin-right: 4px;
       }
     }

@@ -61,7 +61,7 @@
       </main>
       <div v-else id="loading">
         <img src="/icon/logo.png" alt="logo" class="logo" />
-        <span class="tip">个人专属主页</span>
+        <span class="tip">宝站·轻享版</span>
       </div>
     </Transition>
   </Provider>

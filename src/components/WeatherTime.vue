@@ -12,6 +12,7 @@
       set.showLunar ? 'lunar' : null,
       set.timeStyle,
     ]"
+    title="Find More🔍"
     @click.stop
   >
     <div

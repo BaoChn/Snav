@@ -19,7 +19,10 @@
           >
             {{ siteName }}<sup style="font-size:.3em;">mini</sup>
           </span>
-          <span class="version">v {{ packageJson.version }}</span>
+          <span class="version">
+            v {{ packageJson.version }}<br>
+            打造你的专属定制化首页🎨
+          </span>
         </div>
         <div class="desc">
           <n-space class="link" justify="center">
@@ -150,6 +153,7 @@ const jumpTo = (url) => {
     .version {
       opacity: 0.6;
       font-size: 16px;
+      text-align: center;
     }
   }
   .desc {
